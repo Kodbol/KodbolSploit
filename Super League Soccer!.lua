@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("bem bem bem")
+game.Players.LocalPlayer:Kick("idk")
