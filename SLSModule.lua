@@ -27,10 +27,10 @@ game.Workspace.Stadium.Teams[tostring(enemyTeam)].Goal.Hitbox.Size = Vector3.new
       end
 end
 
-function  SLSModule.TrueGoalHitbox()
+function  SLSModule.TrueGoalHitbox(num1, num2, num3)
                 for _, player in game.Players:GetPlayers() do
                if player.Team ~= game.Players.LocalPlayer.Team and player.Team ~= nil then
-                  game.Workspace.Stadium.Teams[tostring(player.Team)].Goal.Hitbox.Size = Vector3.new(x1,y1,z1)
+                  game.Workspace.Stadium.Teams[tostring(player.Team)].Goal.Hitbox.Size = Vector3.new(num1,num2,num3)
                elseif player.Team == game.Players.LocalPlayer.Team and player.Team ~= nil then
                   game.Workspace.Stadium.Teams[tostring(player.Team)].Goal.Hitbox.Size = Vector3.new(31.327247619628906, 11.277809143066406, 8.289474487304688)           
           end
