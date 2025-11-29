@@ -13,7 +13,7 @@ function SLSModule.TrueAutoFarm()
                 for _, player in game.Players:GetPlayers() do
                 if player.Team  ~= game.Players.LocalPlayer.Team and player.Team ~= nil then
                     local enemyTeam = player.Team
-                    game.Workspace.Stadium.Teams[tostring(enemyTeam)].Goal.Hitbox.Size = Vector3.new(1500,1500,1500)
+                    game.Workspace.Stadium.Teams[tostring(enemyTeam)].Goal.Hitbox.Size = Vector3.new(800,50,800)
     task.wait(0.20)                    
     local args = {
 	"ShotActivated",
